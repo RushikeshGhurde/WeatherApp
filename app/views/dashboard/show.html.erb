@@ -1,0 +1,22 @@
+<h1><%= @city.name %></h1>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @city.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @city.longitude %>
+</p>
+
+<h2>Recent Temperatures</h2>
+<% if @recent_temperatures.present? %>
+  <ul>
+    <% @recent_temperatures.each do |temperature| %>
+      <li><%= temperature.date.strftime('%Y-%m-%d') %>: <%= temperature.temperature %>°C</li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No recent temperature records available.</p>
+<% end %>

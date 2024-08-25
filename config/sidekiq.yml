@@ -1,0 +1,8 @@
+:concurrency: 5
+:queues:
+  - default
+
+:cron:
+  update_temperature_job:
+    cron: "0 0 * * *" # Every day at midnight
+    class: "UpdateTemperatureJob"

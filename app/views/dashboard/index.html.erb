@@ -1,0 +1,6 @@
+ <h1>Cities</h1>
+ <ul>
+   <% @cities.each do |city| %>
+     <li><%= link_to city.name, dashboard_path(city) %></li>
+   <% end %>
+ </ul>
