@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Weather Tracker Application
 
 Overview:-
@@ -71,3 +72,6 @@ If you choose to implement real-time updates using WebSockets, ensure that Redis
 
 Documentation
 Detailed documentation for setting up and running the application is available in the docs directory of the repository.
+=======
+# WeatherApp
+>>>>>>> d8babb87fc67c1f2f46845a7c634ef8d07e14268
